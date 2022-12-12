@@ -2,11 +2,11 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import FilterButton from "../FilterButton/filter.button.view.js";
 import ProductsBehavior from "./products.behavior.js";
 
-const Products = ({ products, filters, setFilters, setFetchingData }) => {
+const Products = ({ products, filters, setFilters, setIsFetchingData }) => {
   const [handleFilterClick, handleRemoveFiltersClick] = ProductsBehavior(
     filters,
     setFilters,
-    setFetchingData
+    setIsFetchingData
   );
 
   const productItems = products.map((item, index) => {
@@ -20,8 +20,8 @@ const Products = ({ products, filters, setFilters, setFetchingData }) => {
             width={180}
             className="d-flex flex-column align-items-center mx-auto"
           />
-          <div className="d-flex flex-column align-items-center">{item.name}</div>
-          <div className="d-flex flex-column align-items-center">{item.price}</div>
+          <div className="text-align-custom mb-1">{item.name}</div>
+          <div className="text-align-custom">{item.price}</div>
         </div>
       </Col>
     );
@@ -32,7 +32,7 @@ const Products = ({ products, filters, setFilters, setFetchingData }) => {
       <h2 className="my-2">Available Products</h2>
       <div className="p-3">
         Filter by:
-        <FilterButton name={"Age"} handleClick={handleFilterClick} />
+        <FilterButton name={"Kids"} handleClick={handleFilterClick} />
         {filters.length ? (
           <FilterButton name={"Remove Filters"} handleClick={handleRemoveFiltersClick} />
         ) : null}
