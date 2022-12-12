@@ -3,7 +3,6 @@ import { useEffect } from "react";
 const ProductsBehavior = (filters, setFilters, setFetchingData) => {
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scrolled");
       if (isPageScrolledToBottom()) setFetchingData(true);
     };
 
