@@ -1,4 +1,4 @@
-Getting started with this application
+#Getting started with this application
 This project was bootstrapped with "Create React App"
 
 ## To run this application
