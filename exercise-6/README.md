@@ -1,7 +1,4 @@
-# Getting started with this application
-This project was bootstrapped with "Create React App"
-
-## To run this application
+# How to run this application
 
 Please first run "npm install" to install the necessary packages
 
