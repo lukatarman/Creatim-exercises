@@ -1,4 +1,4 @@
-# How to run this application
+# How to run this exercise (exercise #6)
 
 In the console, please run "npm install" to install the necessary packages.
 
