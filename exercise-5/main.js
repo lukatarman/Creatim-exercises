@@ -1,3 +1,12 @@
+// 5. Napiši skripto, ki pravilno izpiše "mousemove" event za vsakega izmed treh gnezdenih divov:
+
+// 	<div id="element1">
+// 		<div id="element2">
+// 			<div id="element3">
+// 			</div>
+// 		</div>
+// 	</div>
+
 const firstElement = document.getElementById("element1");
 const secondElement = document.getElementById("element2");
 const thirdElement = document.getElementById("element3");
