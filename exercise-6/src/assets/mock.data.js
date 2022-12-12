@@ -1,4 +1,4 @@
-import image from "../img/shoes.jpg";
+import image from "./shoes.jpg";
 
 export const getStoreItems = () => {
   return storeItems.slice(0, 8);

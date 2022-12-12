@@ -2,7 +2,7 @@ import {
   getStoreItems,
   getAdditionalStoreItems,
   getFilteredStoreItems,
-} from "../assets/mockDatabaseResponse/mock.database.response.js";
+} from "../assets/mock.data.js";
 
 export const getItems = async () => {
   return await new Promise((resolve) => {
