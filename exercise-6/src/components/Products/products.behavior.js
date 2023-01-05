@@ -26,7 +26,9 @@ const ProductsBehavior = (filters, setFilters, setFetchingData) => {
 
   const handleFilterClick = (e) => {
     const clickedFilter = e.target.textContent.toLowerCase();
-    if (!filters.includes(clickedFilter)) setFilters([...filters, clickedFilter]);
+    if (filters.includes(clickedFilter)) return;
+
+    setFilters([...filters, clickedFilter]);
   };
 
   const handleRemoveFiltersClick = () => {
